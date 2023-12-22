@@ -19,7 +19,7 @@ int main(void)
 		}
 	}
 	printf("%lu", j);
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
