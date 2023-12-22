@@ -5,13 +5,14 @@
  * Find the largest prime factor of 612852475143
  * Return: 0 (success)
  */
+
 int main(void)
 {
 	long i, j;
 
 	i = 612852475143;
 
-	for (j = 2; j > i; j++)
+	for (j = 2; i > j; j++)
 	{
 		while (i % j == 0)
 		{
@@ -19,7 +20,6 @@ int main(void)
 		}
 	}
 	printf("%lu", j);
-	putchar('\n');
-
+	printf("\n");
 	return (0);
 }
