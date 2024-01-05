@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - change all lowercase to upper
- * str: string to change
+ * @str: string to change
  *
  * Return: string
  */
@@ -11,6 +11,7 @@ char *string_toupper(char *str)
 {
 	int i;
 	int length;
+
 	length = 0;
 
 	while (str[length] != '\0')
