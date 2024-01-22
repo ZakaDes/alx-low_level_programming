@@ -5,6 +5,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stddef.h>
+/**
+ * struct dog - composite
+ * @name: the name of the dog
+ * @age: the age
+ * @owner: the owner of the dog
+ */
 
 struct dog
 {
