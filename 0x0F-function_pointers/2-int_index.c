@@ -13,15 +13,17 @@ int int_index(int *array, int size, int (*cmp)(int))
 	int i;
 
 	i = 0;
-
-	if (size > 0 && array != NULL && cmp != NULL)
+	if (size > 0)
 	{
-		while (size > 0)
+		if (array && cmp)
 		{
-			if (cmp(array[i]))
-				return (i);
-			i++;
+			while (size > 0)
+			{
+				if (cmp(array[i]))
+					return (i);
+				i++;
 
+			}
 		}
 	}
 
