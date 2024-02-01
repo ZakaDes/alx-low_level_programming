@@ -9,9 +9,9 @@
 
 size_t print_list(const list_t *h)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; h != NULL; i++)
+	for (; h != NULL; i++)
 	{
 		if (h->str == NULL)
 
@@ -23,7 +23,6 @@ size_t print_list(const list_t *h)
 
 
 		h = h->next;
-
 	}
 
 	return (i);
